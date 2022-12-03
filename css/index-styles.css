@@ -1,0 +1,396 @@
+.body {
+    height: 100vh;
+    margin: 0;
+    display: block;
+    background-color: rgb(39, 39, 39);
+    overflow-x: hidden;
+          
+}
+
+.nav-bar-behind {
+    height: 16vh;
+}
+
+.nav {
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    
+
+    width: 100%;
+    height: 16vh;
+    padding-bottom: 1%;
+    padding-top: 1%;
+
+    border-bottom-style: solid;
+    border-bottom-width: .5em;
+    border-color: rgb(167,170,175);
+    
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+        
+}
+
+
+.nav-logo-container {
+    height: 100%;
+    padding: 10px;
+    
+}
+
+.nav-logo {
+    height: 100%;
+    width: auto;
+}
+
+.nav-logo-alt {
+    display: none;
+}
+
+.nav-text {
+    padding: 1em;
+    margin: 10px;
+    height: 20%;
+    width: fit-content;
+
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: white;
+    transition: color 200ms ease-out 100ms;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-text:hover {
+    color: rgb(167,170,175);
+}
+
+.nav-text:focus {
+    color: rgb(133, 133, 133);
+}
+
+.nav-text:active {
+    color: red;
+}
+
+.main {
+    align-self: flex-end;
+    height: 86vh;
+    width: 100vw;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    grid-template-columns: 3;
+
+    background-image: url(../images/home/topo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.content-main {
+    height: 75%;
+    width: 80%;
+    overflow: hidden;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-style: solid;
+    border-width: .2em;
+    border-color: rgb(80,81,86);
+
+    
+
+
+    background-color: rgb(16, 22, 29);
+}
+
+.content-main-image-container {
+    height: 50vh;
+    width: fit-content;
+    border-color: rgb(108,109,114);
+}
+
+.content-main-image {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.spacer {
+    height: 50vh;
+    width: 5px;
+    background-color: rgb(108,109,114);
+    margin-left: 2%;
+}
+
+.content-main-text-container {
+    height: 50vh;
+    width: 50%;
+    padding-left: 2%;
+    padding-right: 2%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+
+    color: white;
+}
+
+.content-main-text {
+    
+    display: flex;
+    align-items: center;
+    text-align: right;
+    
+    margin: 0;
+
+    font-size: 4.5vw;
+    font-family: 'Montserrat';
+}
+
+.content-main-text2 {
+
+    display: block;
+    justify-content: end;
+    text-align: left;
+
+    font-family: 'Montserrat';
+    font-weight: 100;
+    font-size: 1.7vw;
+}
+
+.content-main-text3 {
+
+    display: inline-flex;
+    justify-content: end;
+    text-align: left;
+    overflow-wrap: normal;
+
+    margin: 0;
+
+    font-family: 'Montserrat';
+    font-weight: 100;
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: white;
+}
+
+.browse { 
+    align-self: center;
+    height: 30%;
+    filter: invert(100%);
+
+}
+
+.a:hover {
+    color: rgb(167,170,175);
+}
+
+.a:focus {
+    color: rgb(153,153,153);
+}
+
+.a:active {
+    color: red;
+}
+
+.b:hover {
+    filter:invert(65%);
+}
+
+.b:focus {
+    filter: invert(45%);
+}
+
+
+@media only screen and (max-width:  1600px) {
+    
+    .content-main {
+        height: 75%;
+        width: 80%;
+        padding: 1%;
+    
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        border-style: solid;
+        border-width: .2em;
+        border-color: rgb(80,81,86);
+    
+        background-color: rgb(16, 22, 29);
+    }
+
+    .content-main-image-container {
+        height: fit-content;
+        width: 45%;
+    }
+
+    
+
+    .content-main-text-container {
+        height: fit-content;
+        width: 45vw;
+        padding-left: 2%;
+        padding-right: 2%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;  
+    
+        color: white;
+    }
+
+}
+
+@media only screen and (max-width:  900px) {
+
+    .nav-logo-container {
+        width: auto;
+        height: 80%;
+    }
+
+    .nav-logo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content-main-text3 {
+        font-size: 1.8em;
+    }
+
+    
+
+}
+
+@media only screen and (max-width:  688px) {
+
+    .body {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color:  rgb(39, 39, 39);
+    }
+   
+    .nav {
+        width: 100vw;
+        height: 20%;
+        padding-top: 4%;
+        display: inline-block;
+    }
+
+    .nav-logo-container {
+        width: 10%;
+        height: 15%;
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 10vh;
+    }
+    
+    .nav-logo {
+        display: none;
+    }
+
+    .nav-logo-alt {
+        height: 50%;
+        width: fit-content;
+        display: inline;
+    }
+    
+    .nav-text {
+        height: 0; 
+        font-size: 100%;
+    }
+
+    .main {
+        height: 100vh;
+        width: 100vw;
+        margin-top: 5%;
+    }
+    
+    .content-main {
+        height: 80vh;
+        width: 80%;
+        padding: 1%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        grid-template-rows: 1fr, 1fr;
+    
+        border-style: solid;
+        border-width: .2em;
+        border-color: rgb(80,81,86);
+    
+        background-color: rgb(16, 22, 29);
+    }
+
+    .spacer {
+        height: 0;
+        width: 0;
+    }
+
+    .content-main-image-container {
+        height:50%;
+        width: fit-content;
+        padding-bottom: 5%;
+
+    }
+
+
+    .content-main-text-container {
+        height: 55%;
+        width: 90%;
+        padding-left: 2%;
+        padding-right: 2%;
+    
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;  
+ 
+        font-size: 1.7em;
+        color: white;
+    }
+
+    .content-main-text {
+        font-size: 1.2em;
+        text-align: left;
+        
+    }
+
+    .content-main-text2 {
+        font-size: .6em;
+        
+    }
+
+    .content-main-text3 {
+        font-size: .7em;
+    }
+
+}
